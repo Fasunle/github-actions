@@ -4,10 +4,11 @@ name: Super Linter
 on: [pull_request]
 
 jobs:
-  label:
+  build:
     runs-on: ubuntu-latest
-steps:
-  - name: Checkout Repository
-    uses: actions/checkout@v3
-  - name: Fetch directory
-    run: "ls -a | echo"
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Fetch directory
+        run: "ls -a | echo"
