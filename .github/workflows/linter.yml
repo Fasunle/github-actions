@@ -45,7 +45,7 @@ jobs:
           fetch-depth: 0
 
       - name: Display directory
-        run: ls -a
+        run: ll -as
 
       ################################
       # Run Linter against code base #
